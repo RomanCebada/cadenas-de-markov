@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Cadenas de Markov | Información</title>
+</head>
+
+<body class="">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 bg-info pt-3 pb-1 text-center">
+        <p class="text-white" style="font-size:2rem;">Cadenas de Markov | Información</p>
+      </div>
+      <div class="col-12 text-center container" style="background: #78bec0; ;">
+        <div class="row">
+          <div class="col-6 text-center nav-item ">
+            <a class="text-white nav-link " style="font-size: 130% ; border-bottom:solid 3px #d9534f;"
+              href="index.html">Home | Resolver ejercicio</a>
+          </div>
+          <div class="col-6 text-center nav-item ">
+            <a class="text-white nav-link " style="font-size: 130% ; border-bottom:solid 3px #d9534f;"
+              href="informacion.html">Cadenas de Markov | Información</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 container mt-5">
+        <div class="row text-center">
+          <div class="col-12 col-sm-1"></div>
+          <div class=" col-12 col-sm-5 text-center">
+            <img src="cadenas.png" alt="car" class="img-thumbnail" width="50%">
+          </div>
+          <div class=" col-12 col-sm-5 text-justify">
+            <h6>¿Qué son las cadenas de Markov?</h6>
+            <p style="font-size:120%;">
+              Una cadena de Markov es una serie de eventos, en la cual la probabilidad de que ocurra un evento depende
+              del evento inmediato anterior. En efecto, las cadenas de este tipo tienen memoria, "Recuerdan" el último
+              evento y esto condiciona las posibilidades de los eventos futuros. Esta dependencia del evento anterior
+              distingue a las cadenas de Markov de las series de eventos independientes, como tirar una moneda al aire o
+              un dado. En los negocios, las cadenas de Markov se han utilizado para analizar los patrones de compra,los
+              deudores morosos, para planear las necesidades de personal y para analizar el reemplazo de equipo. El
+              análisis de Markov, llamado así en honor de un matemático ruso que desarrollo el método en 1907, permite
+              encontrar la probabilidad de que un sistema se encuentre en un estado en particular en un momento dado.
+              Algo más importante aún, es que permite encontrar el promedio a la larga o las probabilidades de estado
+              estable para cada estado. Con esta información se puede predecir el comportamiento del sistema a través
+              del tiempo.
+            </p>
+            <p style="font-size:120%;">En la teoría de la probabilidad, se conoce como cadena de Márkov o modelo de
+              Márkov a un tipo especial de
+              proceso estocástico discreto en el que la probabilidad de que ocurra un evento depende solamente del
+              evento
+              inmediatamente anterior. Esta característica de falta de memoria recibe el nombre de propiedad de Markov.
+            </p>
+          </div>
+          <div class="col-12 col-sm-1"></div>
+          <div class="col-12 col-sm-1"></div>
+          <div class="col-12 col-lg-5 text-justify">
+            <h6>¿Qué es la transición de estados?</h6>
+          </div>
+          <div class="col-12 col-lg-5 text-center">
+            <img src="estados.png" alt="car" class="img-thumbnail" width="50%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script src="Markov.js"></script>
+  <script src="Controller.js"></script>
+</body>
+
+</html>
