@@ -1,28 +1,43 @@
-class Markov {
+class Markov{
     constructor() {
 
     }
-
-    calcular( t11, t12, t21, t22, periodos, iniciar) {
-        var pS1,pS2,resultado;
-        if(iniciar=='S1'){
-            pS1 = (t11 * t11) + (t12 * t21);
-            pS2 = 1 - pS1;
-            resultado = [];
-            for(let x = 1; x <= periodos; x++){
-                resultado.push(this.calcularRecursivo(t11, t12, t21, t22));
-                pS1 = resultado[0];
-                pS2 = resultado[1];
+    resolver(ini,P11,P12,P22,P21,cant) {
+        if(ini == 'S1'){
+            var PS1,PS2;
+            for(let i=0;i<cant;i++){
+                if(i==0){
+                    let temp1 = Math.pow(P11,2)+(P12)(P21);
+                    let temp2 = 1 - temp1;
+                    PS1 = temp1;
+                    PS2 = temp2;
+                }
+                else{
+                    let temp1 = (PS1)(P11)+(PS2)(P21);
+                    let temp2 = 1 - temp1;
+                    PS1 = temp1;
+                    PS2 = temp2;
+                }
             }
         }
-        
-        return resultado;
-    }
-
-    calcularRecursivo(t11, t12, t21, t22) {
-        let pS1 = (p1 * t11) + (t12 * t21);
-        let pS2 = 1 - pS1;
-        let resultado = [pS1, pS2];
-        return resultado;
+        else{
+            var PS1,PS2;
+            for(let i=0;i<cant;i++){
+                if(i==0){
+                    let temp1 = Math.pow(P22,2)+(P21)(P12);
+                    let temp2 = 1 - temp1;
+                    PS1 = temp1;
+                    PS2 = temp2;
+                }
+                else{
+                    let temp1 = (PS1)(P22)+(PS2)(P12);
+                    let temp2 = 1 - temp1;
+                    PS1 = temp1;
+                    PS2 = temp2;
+                }
+            }
+        }
+        var final = PS1 + " " + PS2;
+        return final;
     }
 }
