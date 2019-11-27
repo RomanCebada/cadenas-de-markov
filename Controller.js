@@ -12,10 +12,10 @@ document.getElementById('res').addEventListener('click',()=>{
     var resultadosFinales = markov.resolver(ini,P11,P12,P22,P21,cant);
     var final = resultadosFinales.split(' ');
     if(ini=='S1'){
-        document.getElementById('success1').innerHTML = `<div class="bg-success rounded py-5">La probabilidad de S1 es de: ${(final[0]*100).toFixed(3)}% en base a los datos ingresados anteriormente</div>`;
+        document.getElementById('success1').innerHTML = `<div class="bg-success rounded py-5">La probabilidad de S1 despues de ${cant} estados es de: ${(final[0]*100).toFixed(3)}% en base a los datos ingresados anteriormente</div>`;
     }
     else{
-        document.getElementById('success1').innerHTML = `<div class="bg-success rounded py-5">La probabilidad de S2 es de: ${(final[1]*100).toFixed(3)}% en base a los datos ingresados anteriormente</div>`;
+        document.getElementById('success1').innerHTML = `<div class="bg-success rounded py-5">La probabilidad de S2 despues de ${cant} estados es de: ${(final[1]*100).toFixed(3)}% en base a los datos ingresados anteriormente</div>`;
     }
 
     document.getElementById('P11').value ="";
